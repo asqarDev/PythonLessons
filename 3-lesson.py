@@ -92,10 +92,48 @@
 # print(b<i and i<u or b>i and i>u)
 
 # 23-misol
-turtxonalison = int(input('sonni kiriting: '))
-a=turtxonalison//1000
-b=turtxonalison//100%10
-c=turtxonalison%100//10
-d=turtxonalison%10
+# turtxonalison = int(input('sonni kiriting: '))
+# a=turtxonalison//1000
+# b=turtxonalison//100%10
+# c=turtxonalison%100//10
+# d=turtxonalison%10
 
-print(a==d and b==c or a==b==c==d)
+# print(a==d and b==c or a==b==c==d)
+
+# 24-misol
+# from math import sqrt
+# a,b,c = eval(input('koyfisentlarni kiriting: '))
+# d=sqrt(abs(b*b-4*a*c))
+# print(d>=0 and b*b-4*a*c>=0)
+
+
+# 25-misol
+# x,y = eval(input('(x,y) kordinatalarni kiriting: '))
+# print(x>0 and y>0 or x<0 and y<0)
+
+ # 29-misol
+# x,y = eval(input('nuqtani kordinatasini kiriting: '))
+# x1,y1,x3,y3 = eval(input('to\'tburchakni kordinatasini kiriting:' ))
+# print(x1<x<x3 and y3<y<y1)
+
+# 33-misol
+
+# a,b,c = eval(input('uchburchakni tomonlarini kiriting: '))
+# print(a+b>c and b+c>a and a+c>b)
+
+
+# 34-misol
+# x,y = eval(input('kiriting: '))
+# print(x%2!=0 and y%2!=0)
+
+# 35-misol
+# x,y = eval(input('x,y = '))
+# x1,y1 = eval(input('(x1,y1) = '))
+# print((x%2==0 and y%2!=0 or x%2!=0 and y%2==0) and (x1%2==0 and y1%2!=0 or y1%2==0 and x1%2!=0)) 
+
+
+# 36-misol
+# x,y,x1,y1 = eval(input('kordinatalarni kiriting: '))
+# print(x+1==x1 and y+1==y1)
+
+# 37-misol
