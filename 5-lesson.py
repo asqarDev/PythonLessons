@@ -348,3 +348,80 @@
 #     a.append(ak)
 # print(a)
 
+
+
+#  tast uchun mashiqlar
+
+
+# karra jadvalini chiqarish
+# karra=9;
+# for i in range(1,11):
+#     natija=karra*i;
+#     print(f"{karra} x {i} = {natija}")
+
+
+# for i in range(1,10):
+#     print(i)
+#     for son in range(11):
+#         natija=i*son;
+#         print("{} x {} = {}".format(i,son,natija),sep="  \n")
+
+# n=int(input('n = '))
+# sum=0
+# for i in range(1,n+1):
+#     if i%2==0:
+#         sum+=i;
+#         print(i)
+# print(sum)
+
+
+# from random import randint
+
+
+# a=randint(1,100)
+# b=randint(12,50)
+# c=int(input('{} + {} = '.format(a,b)))
+# if c==a+b:
+#     print('togri')
+# else:
+#     print("xato")
+
+# from math import ceil, floor
+
+
+# a=9.3
+# b=23.8
+# print(floor(a))
+# print(ceil(a))
+# print(round(a))
+
+# print(floor(b))
+# print(ceil(b))
+# print(round(b))
+
+
+
+
+# number=[12,23,34,32,1221,34,98]
+# print(max(number))
+# print(min(number))
+# print(len(number))
+# print(number)
+
+
+
+# import random
+
+# print(random.randrange(1, 10))
+
+# a="Assalomu aleykum "
+# print(a[6])
+# a="Assalomu aleykum"
+# for i in a:
+#     print(i)
+# print(len(a))
+# print("als" in a)
+
+
+
+
