@@ -295,6 +295,8 @@
 #         break
 #     else:
 #         continue
+import math
+from operator import le
 import random
 
 # n, k, l = eval(input("n, k, l = "))
@@ -444,6 +446,632 @@ import random
 
 # 30-misol
 
+# n = int(input("n = "))
+# # a = list(random.sample(range(10), n))
+# a = []
+# for i in range(n):
+#     b = int(input(f"{i}" "-element "))
+#     a.append(b)
+
+# print(a)
+
+# for i in range(len(a)):
+#     if a[i] == n:
+#         print(i+1)
+#         break
+#     elif a[i+1] <= n:
+#         print(i+1)
+#     elif a[i] == a[-i]:
+#         print(i+1)
+#     else:
+#         continue
+
+
+
+# 32-misol
+# n = int(input('n = '))
+# a = list(random.sample(range(10), n))
+# print(a)
+# lst_mins = []
+# for i in range(len(a)-2):
+#
+#     if a[i] > a[i+1] and a[i+1] < a[i+2]:
+#         print(a.index(a[i+1]))
+#         lst_mins.append(a[i+1])
+#         break
+#     else:
+#         continue
+
+
+        
+
+
+# 33-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+#
+# for i in range(len(a)-2):
+#     if a[i] < a[i+1] and a[i+1] > a[i+2]:
+#         print(f"{a.index(a[i+1])}-index", a[i+1])
+#     else:
+#         continue
+
+
+
+
+# for i in range(len(a)//2):
+#     if a[i] > a[i+1] and a[i+1] < a[i+2]:
+#         print(a.index(a[i+1]))
+
+#     else:
+#         continue
+# else:
+#     print("shart bo'yichamas! ")
+
+
+# 34-misol
+#
+# n = int(input("n = "))
+# a = list(random.sample(range(100), n))
+# lst_main = []
+# for i in range(len(a)-2):
+#     if a[i] > a[i+1] and a[i+1] < a[i+2]:
+#         lst_main.append(a[i+1])
+#     else:
+#         continue
+# if len(lst_main) > 0:
+#     print(a)
+#     print(lst_main)
+#     print(max(lst_main))
+# else:
+#     print(0)
+
+
+# 35-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(100), n))
+# print(a)
+# lst_a = []
+# for x in range(len(a)-2):
+#     if a[x] < a[x+1] and a[x+1] > a[x+2]:
+#         print(f"{x+1}-index ", a[x+1])
+#         lst_a.append(a[x+1])
+#     else:
+#         continue
+# if len(lst_a) > 0:
+#     print(lst_a)
+#     print(min(lst_a))
+# else:
+#     print(0)
+
+
+
+
+# 36-misol
+# n = int(input('n = '))
+# a = list(random.sample(range(100), n))
+# lst1 = []
+# lst2 = []
+# print(a)
+#
+# for i in range(1, len(a)-1):
+#     # print(i)
+#     if a[i] > a[i-1] and a[i] > a[i+1]:
+#         temp = a.pop(i)
+#         lst2.append(temp)
+#         print("local max: ", lst2)
+#     elif a[i] < a[i-1] and a[i] < a[i+1]:
+#         temp2 = a.pop(i)
+#         lst1.append(temp2)
+#         print("local min: ", lst1)
+#
+#     else:
+#         continue
+# print("qolgan list: ", a)
+
+
+
+
+# for i in range(len(a)-2):
+#     if a[i-1] < a[i]  and a[i] < a[i+1]:
+#         # lst1.append(a[i+1])
+#         # print(i, i+1, i+2)
+#         print('local min: ', a.pop(i+1))
+#     if a[i] > a[i - 1] and a[i] > a[i + 1]:
+#         # lst2.append(a[i+1])
+#         print('local max:', a.pop(i+1))
+#         # del a[i+1]
+# # for i in range(len(a) - 2):
+# #     if a[i] > a[i-1] and a[i] > a[i+1]:
+# #         # lst2.append(a[i+1])
+# #         print('local max:', a.pop(i+1))
+# #         # del a[i+1]
+#
+# print(a, max(a), min(a))
+# # if len(lst2) > 0 or len(lst1) > 0:
+# #     print("local max ", lst1, ",\nlocal min ", lst2)
+# # else:
+# #     print(0)
+
+
+
+
+
+
+# 37-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(100), n))
+# print(a)
+#
+# count = 0
+# step = 0
+# for i in range(len(a)):
+#     for j in range(i, len(a)-1):
+#         if a[j] < a[j+1]:
+#             step += 1
+#             continue
+#         elif step > 0:
+#             step = 0
+#             i = j+1
+#             count += 1
+#             break
+#         elif step == 0:
+#             i = j + 1
+#             break
+# print("resultat: ", count)
+
+
+
+
+# 37
+
+# count, step = 0, 0
+# n = 10
+# lst = random.sample(range(100), n)
+#
+# print("lst:", lst)
+#
+# for i in range(len(lst)):
+#     # print("i:  ", i)
+#     for j in range(i, len(lst)-1):
+#         if lst[j] < lst[j+1]:
+#             step += 1
+#             continue
+#         elif step > 0:
+#             step = 0
+#             i = j+1
+#             count += 1
+#             break
+#         elif step == 0:
+#             i = j+1
+#             break
+# print("Resultat", count)
+
+# 38-misol
+# n = int(input("n = "))
+# lst = list(random.sample(range(100), n))
+# print(lst)
+# step = 0
+# count = 0
+# for i in range(len(lst)):
+#     for j in range(i, len(lst)-1):
+#
+#         if lst[j] > lst[j+1]:
+#             step += 1
+#             continue
+#         elif step > 0:
+#             step = 0
+#             i = j+1
+#             count += 1
+#             break
+#         elif step == 0:
+#             i = j+1
+#             break
+# print("result: ", count)
+
+
+
+
+# 39-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(100), n))
+# print(a)
+# step = 0
+# count = 0
+# for i in range(len(a)):
+#     for j in range(i, len(a)-1):
+#         if a[j] < a[j+1] or a[j] > a[j+1]:
+#             step += 1
+#
+#         if step > 0:
+#             step = 0
+#             i = j+1
+#             count += 1
+#             break
+#         if step == 0:
+#             i = j+1
+#             break
+# print("Result", count)
+
+# 40-misol
+
+# print(math.floor(3.2))
+# print(math.ceil(3.2))
+# print(round(3.6))
+
+# r, n = eval(input("r va n ni kiriting: "))
+# lst = list(random.sample(range(10), n))
+# print(lst)
+# a = []
+# for i in lst:
+#
+#     a.append(abs(i-r))
+# print(a)
+# for x in range(1, len(a)+1):
+#     if min(a) == a[x-1]:
+#         print(lst[x-1])
+#
+# print(min(a))
+
+# 41-misol
+# n = int(input("n = "))
+# # a = list(random.sample(range(10), n))
+# # print(a)
+# b = list(random.choices(range(10), k=n))
+# print(b)
+# lc = []
+# for i in range(len(b)-2):
+#     if b[i] + b[i+1] > b[i+1] + b[i+2]:
+#         lc.append(b[i] + b[i+1])
+#         print("yonma yon elementlar yig'indisi: ", b[i]+b[i+1], "\tindex: ", i, i+1)
+#     elif b[i]+b[i+1] < b[i+1] + b[i+2]:
+#         lc.append(b[i+1]+b[i+2])
+#         print("yonma yon elementlar yig'indisi:", b[i+1]+b[i+2], "\tindex: ", i+1, i+2)
+#     else:
+#         continue
+#
+# print(lc)
+# print(f"{n} o'lchamli masivning eng katta 2 ta yonma yon massiv elementlari yig'indis: ", max(lc))
+
+
+# 42-misol
+# r, n = eval(input("r va n ni kiriting: "))
+# massiv = list(random.choices(range(10), k=n))
+# print(massiv)
+# a = []
+# for i in range(len(massiv)-1):
+#     a.append(abs(massiv[i]+massiv[i+1]-r))
+# print(a)
+#
+# for i in range(len(a)):
+#     if min(a) == a[i]:
+#         print(massiv.index(massiv[i]), massiv.index(massiv[i])+1, end=" , ")
+
+
+
+
+# for i in range(len(massiv)-2):
+#     if abs(massiv[i]+massiv[i+1]-r) > abs(massiv[i+1]+massiv[i+2]-r):
+#         print("index: ", i+1, i+2)
+#     elif abs(massiv[i] + massiv[i+1] - r) < abs(massiv[i+1] + massiv[i+2] - r):
+#         print("index: ", i, i+1)
+#     else:
+#         continue
+
+# 43-misol
+# n = int(input("n = "))
+# a = list(random.choices(range(10), k=n))
+# a.sort()
+# print(a)
+# print("toq indexdagi elementlar: ", a[1::2])
+# a.sort(reverse=True)
+# print(a)
+# print("toq indexdagi elementlar: ", a[1::2])
+
+
+# 44-misol
+# 1-usul
+# n = int(input("n = "))
+# a = list(random.choices(range(10), k=n))
+# print(a)
+# for i in range(len(a)):
+#     if i > 1 and a[i] in a[:i]:
+#         continue
+#     else:
+#         index = i
+#         for j in a[i:]:
+#             if j in a[i+1:]:
+#                 if j == a[i]:
+#                     print(index, end=" , ")
+#             index += 1
+
+# 2-usul
+# n = int(input("n = "))
+# a = list(random.choices(range(10), k=n))
+# print(a)
+# for i in range(len(a)):
+#     # print(a.count(a[i]))
+#     if a.count(a[i]) > 1 and a[i] in a[:i+1]:
+#         print(a[i], f', {a.count(a[i])}' " marta takrorlangan element ")
+#         print("index: ", i)
+#
+#     else:
+#         continue
+
+
+# 45-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# temp = []
+# for i in range(len(a)):
+#     for j in range(i+1, len(a)):
+#         temp = (abs(a[i]-a[j]))
+#
+# print(temp)
+
+
+
+
+
+# 46-misol
+# r, n = eval(input('r va n ni kiriting: '))
+# a = list(random.sample(range(10) ,n))
+# print(a)
+# temp = []
+# for i in range(len(a)-1):
+#     temp.append(abs(a[i]+a[i+1]-r))
+# print(temp)
+# for i in range(len(a)-1):
+#     if min(temp) == temp[i]:
+#         print("index: ", a.index(a[i]), a.index(a[i+1]))
+
+
+
+
+
+# 47-misol
+# n = int(input("n = "))
+# a = list(random.choices(range(10), k=n))
+# print(a)
+# count = 0
+# for i in range(len(a)):
+#     if a.count(a[i]) == 1:
+#         count += 1
+#
+#     else:
+#         continue
+# print(count)
+
+# 48-misol
+# n = int(input("n = "))
+# a = list(random.choices(range(10), k=n))
+# print(a)
+# for i in range(len(a)-1):
+#     if a.count(a[i]) != 1:
+#         if a.count(a[i]) < a.count(a[i+1]):
+#             print("index: ", i+1, " , ", a.count(a[i+1]), " marta takrorlangan")
+#         elif a.count(a[i]) >= a.count(a[i+1]):
+#             print("index: ", i, " , ", a.count(a[i]), " marta takrorlangan ")
+#
+#
+#     else:
+#         continue
+
+
+# 49-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# for i in range(len(a)):
+#     if a[i] not in range(1, n+1):
+#         print("index: ", a.index(a[i]))
+#         break
+#     if a.index(a[i]) == n-1:
+#         print(0)
+
+
+# 50-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# inv_count = 0
+# # for i in range(len(a)-1):
+# for i in range(n):
+#     for j in range(i + 1, n):
+#         if (a[i] > a[j]):
+#             inv_count += 1
+#
+# print(sorted(a))
+# print(inv_count)
+
+
+
+
+
+
+
+
+
+
+
+# Mavzu: 3. Bir necha massivlar bilan ishlash
+
+# 51-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# b = list(random.sample(range(10), n))
+# print(f"a = {a} \nb = {b}")
+#
+# for j in range(n):
+#     if a[j] == b[j]:
+#         count = j
+# a.pop(count)
+# b.pop(count)
+# print(a)
+# print(b)
+# for i in range(len(a)):
+#     a[i] = b[i]+a[i]
+#     b[i] = a[i]-b[i]
+#     a[i] = a[i]-b[i]
+#
+# print(f'a = {a} \nb = {b}')
+
+# 52-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# b = []
+# for i in range(n):
+#     if a[i] < 5:
+#         b.append(a[i]*2)
+#     else:
+#         b.append(a[i]/2)
+# print(b)
+
+
+# 53-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(100), n))
+# b = list(random.sample(range(100), n))
+# c = []
+# print(a)
+# print(b)
+# for i in range(len(a)):
+#     if a[i] > b[i]:
+#         c.append(a[i])
+#     else:
+#         c.append(b[i])
+# print(c)
+
+
+# 54-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# b = []
+# for i in range(len(a)):
+#     if a[i]%2 == 0:
+#         b.append(a[i])
+# print("uzunligi ", len(b), b)
+
+# 55-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# print("uzunligi: ", len(a[1::2]))
+# print(a[1::2])
+
+# 56-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# print("uzunligi: ", len(a[3::3]), a[3::3])
+
+
+# 57-misol
+
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# b = a[::2] + a[1::2]
+#
+# print(b)
+
+
+# 58-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# b = []
+# temp = 0
+# for i in range(len(a)):
+#     temp += a[i]
+#     b.append(temp)
+# print(b)
+
+
+# 59-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# temp = 0
+# b = []
+# count = 0
+# for i in range(len(a)):
+#     count += 1
+#     temp += a[i]
+#     b.append(temp/count)
+# print(b)
+
+
+# 60-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# temp = 0
+# y = sum(a)
+# b = []
+# for i in range(len(a)):
+#     b.append(y)
+#     y -= a[i]
+# print(b)
+
+
+# 61-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# print(a)
+# b = []
+# yig = sum(a)
+# for i in range(len(a)):
+#     b.append(yig/(n-i))
+#     yig -= a[i]
+# print(b)
+
+# 62-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(-10, 10), n))
+# print(a)
+# b = []
+# c = []
+# for i in range(len(a)):
+#     if a[i] > 0:
+#         b.append(a[i])
+#     else:
+#         c.append(a[i])
+# print("uzunligi ", len(b), b)
+# print("uzunligi ", len(c), c)
+
+
+
+# 63-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(30), n))
+# b = list(random.sample(range(30), n))
+# a.sort()
+# b.sort()
+# print(a)
+# print(b)
+# c = a + b
+# c.sort()
+# print(c)
+
+
+# 64-misol
+# n = int(input("n = "))
+# a = list(random.sample(range(10), n))
+# b = list(random.sample(range(20), n))
+# c = list(random.sample(range(30), n))
+# a.sort(reverse=True)
+# b.sort(reverse=True)
+# c.sort(reverse=True)
+# print(a)
+# print(b)
+# print(c)
+# d = a + b + c
+# print(sorted(d))
 
 
 
