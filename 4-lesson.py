@@ -6,6 +6,8 @@
 # else:
 #     print(a-2)
 
+
+
 # 3-misol
 # a = int(input('a = '))
 # if(a<0):
@@ -261,4 +263,17 @@
 #     if son%2==0:
 #         print('1-xonali  juft son')
 #     else:
-#         print("1-xonali toq son") 
+#         print("1-xonali toq son")
+
+
+
+
+
+
+
+
+
+
+
+
+
