@@ -264,7 +264,7 @@
 #         print('1-xonali  juft son')
 #     else:
 #         print("1-xonali toq son")
-
+print("jhkhg")
 
 
 
