@@ -252,6 +252,109 @@ talabalar = {
 #     print(f"{k.title()}ning telifoni {q.title()}")
 
 
+car0 = {
+    "model": "Lasseti",
+    'rangi': "qora",
+    "yili": "2019",
+    "narxi": "23000$"
+    }
+car2 = {
+    "model": "Gentra",
+    'rangi': "movi",
+    "yili": "2019",
+    "narxi": "26000$"
+    }
+car3 = {
+    "model": "Matiz",
+    'rangi': "oq",
+    "yili": "2014",
+    "narxi": "2000$"
+    }
+# car = car0
+# print(f"{car['model'].title()} rangi {car['rangi'].title()} yili {car['yili']} narxi {car['narxi']}")
+
+# cars = [car0, car2, car3]
+# for car in cars:
+#     print(f"{car['model'].title()} "
+#           f"{car['rangi'].title()} rang "
+#           f"{car['yili']} - yil narxi {car['narxi']}"
+#           )
+
+#
+# malibus = []
+# for i in range(10):
+#     new_car = {
+#         "model": "malibu",
+#         "rangi": None,
+#         "yili": 2020,
+#         "narxi": None,
+#         "Km": 0,
+#         "korobka": "avtomat"
+#
+#     }
+#     malibus.append(new_car)
+#
+# for malibu in malibus[:3]:
+#     malibu['rangi']='qizil'
+# for malibu in malibus[3:6]:
+#     malibu['rangi'] = 'qora'
+#
+# for malibu in malibus[6:]:
+#     malibu['rangi'] = "oq"
+#     malibu['korobka'] = 'mexanika'
+# for malibu in malibus:
+#     print(malibu)
+
+
+
+
+
+# Amaliyot masala
+
+
+StiwJobs = {
+    "ismi": "Stiw Jobs",
+    "tyili": 1968,
+    "vyili": 2020,
+    "manzili":"Amerika",
+    "kasbi": "ixtirochi"
+}
+
+Alisher_Navoiy = {
+    "ismi": "Alisher Navoiy",
+    "tyili": 1441,
+    "vyili": 1501,
+    "manzili": "Hirot",
+    "kasbi": "Adabiyot shunos"
+
+}
+buxoriy = {
+    "ismi": "Abu Abdulloh Muhammad ibn Ismoil",
+    "tyili": 810,
+    "vyili": 870,
+    "manzili": "Buxoro",
+    "kasbi": "G'irt bekorchi"
+}
+
+shaxslar = [StiwJobs, Alisher_Navoiy, buxoriy]
+for item in shaxslar:
+    ism = item['ismi']
+    tyili = item['tyili']
+    vyili = item['vyili']
+    manzili = item['manzili']
+    kasbi = item['kasbi']
+    # print(f"{ism} {tyili}-yil {manzili} da tug'ilgan " f"{kasbi} bo'lgan {vyili} yili vafot etgan")
+    # print(f"{item['ismi'].title()} {item['tyili']}-yilda tug'ilgan {item['manzili'].title()} da yashagan va {item['vyili']}-yil vafot etgan"
+    #       f"{item['tyili']-item['vyili']} yil umr ko'rgan kasbi {item['kasbi']} bo'lgan")
+
+
+
+
+
+
+
+
+
 
 
 

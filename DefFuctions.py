@@ -535,3 +535,28 @@ def talabalar(familya, ism, **malumotlar):
 # print("hozirgacha ", object1.chiqqan_yildan(), " yil")
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
