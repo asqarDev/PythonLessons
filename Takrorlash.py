@@ -197,3 +197,48 @@ lugatlar = {
 
 
 
+# number_grid = [
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9],
+#     [0]
+# ]
+
+# print(number_grid)
+# for row in number_grid:
+#     for col in row:
+#         print(col)
+
+
+# def translate(pragres):
+#     translation = ''
+#     for letter in pragres:
+#         if letter in "AOIEUaouei":
+#             if letter.isupper():
+#                 translation = translation + "G"
+#             else:
+#                 translation = translation + "g"
+
+#         else:
+#             translation = translation + letter
+
+#     return translation
+
+# print(translate(input("Enter a pragres: ")))
+
+# try:
+#     # value = 10/0
+#     number = int(input("Enter a number: "))
+#     print(number)
+# except ZeroDivisionError:
+#     print("division in erorr")
+# except ValueError:
+#     print("invalit input")
+
+
+
+# def salom():
+#     '''salom beruvchi funksiya'''
+#     print("Assalomu aleykum ")
+# print(salom.__doc__)
+

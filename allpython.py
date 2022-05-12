@@ -43,26 +43,42 @@
 
 
 
-import random
-def sontop(x):
-    i = 0
-    tasodifiy_son = random.randint(1, x)
-    print(f"Men 1 dan {x} gacha son o'yladim. Topa olasizmi")
-    while True:
-        i += 1
-        taxmin = int(input(">>> "))
-        if taxmin > tasodifiy_son:
-            print(f"Xato, men o'ylagan son bundan kichik qaytadan kiriting: ")
-        elif taxmin < tasodifiy_son:
-            print(f"Xato, men o'ylagan son bundan katta qaytadan kiriting: ")
-        else:
-            print(f"Topdingiz {i} taxmin bilan topdingiz")
-
-            break
-    return i
+# Funksiya haqida tushunchalar
 
 
-sontop(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import random
+# def sontop(x):
+#     i = 0
+#     tasodifiy_son = random.randint(1, x)
+#     print(f"Men 1 dan {x} gacha son o'yladim. Topa olasizmi")
+#     while True:
+#         i += 1
+#         taxmin = int(input(">>> "))
+#         if taxmin > tasodifiy_son:
+#             print(f"Xato, men o'ylagan son bundan kichik qaytadan kiriting: ")
+#         elif taxmin < tasodifiy_son:
+#             print(f"Xato, men o'ylagan son bundan katta qaytadan kiriting: ")
+#         else:
+#             print(f"Topdingiz {i} taxmin bilan topdingiz")
+
+#             break
+#     return i
+
+
+# sontop(10)
 
 
 
