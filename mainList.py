@@ -1074,6 +1074,38 @@ import random
 # print(sorted(d))
 
 
+# 12-misol matritsadan
+# m,n = eval(input("matritsa o'lchamlarini kiriting: "))
+# massiv = []
+# matrix = []
+# for i in range(m):
+#     massiv = []
+#     for j in range(n):
+#         d = random.randint(1, 21)
+#         massiv.append(d)
+#     matrix.append(massiv)
+# print(matrix)
+# x = 0
+# while x != 0:
+#     for d in range(m):
+#         k = matrix[d][x]
+#         print(k)
+#     for d in range(m):
+#         k = matrix[m - 1 - d][x]
+#         print(k)
+#     x += 1
+# for i in range(n):
+#     if i%2==0:
+#         for j in range(m):
+#             print(matrix[j][i], end=" ")
+#     else:
+#         for j in range(m-1, -1, -1):
+#             print(matrix[j][i], end=" ")
+#     print('\n')
+
+
+
+
 
 
 
