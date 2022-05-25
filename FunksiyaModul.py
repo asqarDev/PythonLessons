@@ -26,3 +26,10 @@
 # natija2 = kopaytma(2, 3, 4, 6)
 # print(natija2)
 
+
+
+
+
+
+
+

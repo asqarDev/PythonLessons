@@ -213,23 +213,23 @@ import random
 
 
 
-students = {
-    "name": "Asqar",
-    "sunnem": "Mirzayev",
-    "age": 25,
-    "courses": ["Math", "subject"]
+# students = {
+#     "name": "Asqar",
+#     "sunnem": "Mirzayev",
+#     "age": 25,
+#     "courses": ["Math", "subject"]
 
-}
-print(students.keys())
-print(students.values())
-students['item'] = "items"
-print(students.items())
-print(len(students))
-for item, value in students.items():
-    print(item, value)
-print(students.copy())
-del students["name"]
-students.clear()
-print(students)
-print(list(students))
-print(tuple(students))
+# }
+# print(students.keys())
+# print(students.values())
+# students['item'] = "items"
+# print(students.items())
+# print(len(students))
+# for item, value in students.items():
+#     print(item, value)
+# print(students.copy())
+# del students["name"]
+# students.clear()
+# print(students)
+# print(list(students))
+# print(tuple(students))
